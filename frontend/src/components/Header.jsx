@@ -22,6 +22,7 @@ export const Header = () => {
             <button onClick={() => scrollToSection('home')} className="nav-link">Home</button>
             <button onClick={() => scrollToSection('libro')} className="nav-link">Il Libro</button>
             <button onClick={() => scrollToSection('autore')} className="nav-link">L'Autore</button>
+            <button onClick={() => scrollToSection('estratti')} className="nav-link">Estratti</button>
             <button onClick={() => scrollToSection('acquista')} className="nav-link">Acquista</button>
             <button onClick={() => scrollToSection('contatti')} className="nav-link">Contatti</button>
           </div>
