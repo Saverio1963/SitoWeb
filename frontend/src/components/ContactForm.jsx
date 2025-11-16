@@ -55,14 +55,52 @@ export const ContactForm = () => {
             <p className="body-medium text-text-secondary mb-6">
               Hai domande sul libro? Scrivici, saremo felici di risponderti
             </p>
-            <div className="flex items-center justify-center gap-2 text-brand-primary">
-              <Mail className="w-5 h-5" />
-              <a 
-                href="mailto:saverio.santoniccolo@gmail.com" 
-                className="body-medium font-semibold hover:underline"
-              >
-                saverio.santoniccolo@gmail.com
-              </a>
+            
+            <div className="flex flex-col items-center gap-4 mb-6">
+              <div className="flex items-center gap-2 text-brand-primary">
+                <Mail className="w-5 h-5" />
+                <a 
+                  href={`mailto:${bookData.contact.email}`}
+                  className="body-medium font-semibold hover:underline"
+                >
+                  {bookData.contact.email}
+                </a>
+              </div>
+              
+              <div className="flex items-center gap-6 mt-2">
+                <a 
+                  href={`https://www.facebook.com/search/top?q=${encodeURIComponent(bookData.contact.social.facebook)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-text-secondary hover:text-brand-primary transition-colors"
+                  title="Facebook"
+                >
+                  <Facebook className="w-6 h-6" />
+                  <span className="body-small">Facebook</span>
+                </a>
+                
+                <a 
+                  href={`https://www.instagram.com/explore/search/keyword/?q=${encodeURIComponent(bookData.contact.social.instagram)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-text-secondary hover:text-brand-primary transition-colors"
+                  title="Instagram"
+                >
+                  <Instagram className="w-6 h-6" />
+                  <span className="body-small">Instagram</span>
+                </a>
+                
+                <a 
+                  href={`https://www.linkedin.com/search/results/people/?keywords=${encodeURIComponent(bookData.contact.social.linkedin)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-text-secondary hover:text-brand-primary transition-colors"
+                  title="LinkedIn"
+                >
+                  <Linkedin className="w-6 h-6" />
+                  <span className="body-small">LinkedIn</span>
+                </a>
+              </div>
             </div>
           </div>
 
