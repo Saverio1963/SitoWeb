@@ -241,6 +241,16 @@
   overflow: hidden;
 }
 
+.excerpt-card {
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.excerpt-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0, 212, 255, 0.15);
+}
+
 .purchase-card {
   transition: transform 0.3s ease;
 }
