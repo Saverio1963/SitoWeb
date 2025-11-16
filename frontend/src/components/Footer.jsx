@@ -1,5 +1,5 @@
 import React from 'react';
-import { Book, Mail } from 'lucide-react';
+import { Book, Mail, Facebook, Instagram, Linkedin } from 'lucide-react';
 import { bookData } from '../data/mock';
 
 export const Footer = () => {
@@ -18,17 +18,51 @@ export const Footer = () => {
           </div>
 
           <div className="text-center md:text-right">
-            <p className="body-small text-text-secondary mb-2">
+            <p className="body-small text-text-secondary mb-3">
               Per informazioni:
             </p>
-            <div className="flex items-center gap-2 justify-center md:justify-end">
-              <Mail className="w-4 h-4 text-brand-primary" />
-              <a 
-                href={`mailto:${bookData.contact.email}`}
-                className="body-small text-brand-primary hover:underline"
-              >
-                {bookData.contact.email}
-              </a>
+            <div className="flex flex-col gap-3">
+              <div className="flex items-center gap-2 justify-center md:justify-end">
+                <Mail className="w-4 h-4 text-brand-primary" />
+                <a 
+                  href={`mailto:${bookData.contact.email}`}
+                  className="body-small text-brand-primary hover:underline"
+                >
+                  {bookData.contact.email}
+                </a>
+              </div>
+              
+              <div className="flex items-center gap-4 justify-center md:justify-end">
+                <a 
+                  href={`https://www.facebook.com/search/top?q=${encodeURIComponent(bookData.contact.social.facebook)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-text-secondary hover:text-brand-primary transition-colors"
+                  title="Facebook"
+                >
+                  <Facebook className="w-5 h-5" />
+                </a>
+                
+                <a 
+                  href={`https://www.instagram.com/explore/search/keyword/?q=${encodeURIComponent(bookData.contact.social.instagram)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-text-secondary hover:text-brand-primary transition-colors"
+                  title="Instagram"
+                >
+                  <Instagram className="w-5 h-5" />
+                </a>
+                
+                <a 
+                  href={`https://www.linkedin.com/search/results/people/?keywords=${encodeURIComponent(bookData.contact.social.linkedin)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-text-secondary hover:text-brand-primary transition-colors"
+                  title="LinkedIn"
+                >
+                  <Linkedin className="w-5 h-5" />
+                </a>
+              </div>
             </div>
           </div>
         </div>
