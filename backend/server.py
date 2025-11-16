@@ -9,6 +9,13 @@ from pydantic import BaseModel, Field, ConfigDict
 from typing import List
 import uuid
 from datetime import datetime, timezone
+import sys
+
+# Add the backend directory to Python path
+sys.path.insert(0, str(Path(__file__).parent))
+
+from models.contact import ContactCreate, ContactResponse
+from routes.contacts import create_contact
 
 
 ROOT_DIR = Path(__file__).parent
