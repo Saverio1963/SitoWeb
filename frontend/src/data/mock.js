@@ -3,6 +3,7 @@ export const bookData = {
   subtitle: "Storie di vita vissuta",
   author: "Saverio Santoniccolo",
   coverImage: "/book-cover.jpg",
+  authorPhoto: "/author-photo.jpg",
   
   synopsis: "È un viaggio autentico e crudo nelle indagini, nelle notti, nelle scelte e nelle ferite di un uomo che ha servito lo Stato per quarantuno anni. Saverio Santoniccicolo, Luogotenente in Carica Speciale dell'Arma dei Carabinieri, ora in congedo, racconta con voce diretta e profonda le operazioni contro la mafia, il narcotraffico internazionale, gli assalti per rapine ai portavalori. Le stragi e gli omicidi che hanno segnato intere comunità, la cattura di latitanti e il dolore per la perdita di colleghi e innocenti. Queste pagine non sono solo cronaca: sono memoria viva, testimonianza morale, resistenza civile.",
   
