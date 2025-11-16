@@ -7,6 +7,7 @@ import { AboutAuthor } from "./components/AboutAuthor";
 import { WhyIWrote } from "./components/WhyIWrote";
 import { Quote } from "./components/Quote";
 import { BookExcerpts } from "./components/BookExcerpts";
+import { Gallery } from "./components/Gallery";
 import { Purchase } from "./components/Purchase";
 import { ContactForm } from "./components/ContactForm";
 import { Footer } from "./components/Footer";
@@ -23,6 +24,7 @@ function App() {
         <WhyIWrote />
         <Quote />
         <BookExcerpts />
+        <Gallery />
         <Purchase />
         <ContactForm />
       </main>
