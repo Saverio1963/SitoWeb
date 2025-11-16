@@ -12,6 +12,29 @@ export const bookData = {
   quote: "L'uniforme non é solo un simbolo, é una promessa fatta a chi non ha voce, a chi ha perso la fiducia, a chi aspetta che qualcuno dica: \"io ci sono\"",
   quoteAuthor: "Saverio Santoniccolo",
   
+  excerpts: [
+    {
+      id: 1,
+      title: "Tra le fiamme",
+      text: "Rovi, alberi spezzati, fumo, calore insopportabile. Avanzammo tra le fiamme per un centinaio di metri. Gli occhi lacrimavano, il sudore bruciava. Poi, sotto un albero, la sagoma di una bambina. Supina, braccia piegate, corpo fumante."
+    },
+    {
+      id: 2,
+      title: "L'operazione",
+      text: "Primo passaggio, sagome a ridosso del muro. Secondo passaggio: quota più bassa, videocamera accesa, metto lo zoom al massimo. Quasi non riuscivo a crederci. Li vedevo, li vedevo tutti. Sei individui, seduti su un muretto, in tute mimetiche verdi, con teste rasate, volti rivolti al sole, rilassati, sicuri, pronti."
+    },
+    {
+      id: 3,
+      title: "Faccia d'angelo",
+      text: "Riunione d'urgenza. Avevamo un nome, un volto. Un legame diretto con la rete criminale garganica. Tucci Saverio, \"faccia d'angelo\". Un soprannome che strideva con la realtà. Di angelico non aveva nulla. Era un soggetto di Manfredonia, noto da anni per il suo spessore criminale. Aveva collezionato condanne per mafia, era stato vittima di attentati, eppure - come purtroppo spesso accade in Italia - le condanne si scontano, se si scontano, dopo decenni."
+    },
+    {
+      id: 4,
+      title: "Redenzione",
+      text: "Penso che, quando una persona così profondamente radicata nella criminalità sceglie di affidarsi a un'altra per cambiare vita, non per paura delle conseguenze legali, ma per un'intima convinzione, si toccano davvero le corde più intime del senso di giustizia e della professione che si ricopre. Non si tratta più di assicurare un criminale alla giustizia, ma di essere un punto di riferimento, una guida in un percorso di redenzione. E un atto di fiducia enorme e, per chi lo riceve, un'opportunità straordinaria di dimostrare che il sistema non è solo punitivo, ma può anche essere uno strumento di rinascita e cambiamento. E ciò evidenzia come il vero successo non sia sempre legato alla condanna, ma a quell'impatto umano e morale che può portare a una trasformazione radicale nella vita di un individuo."
+    }
+  ],
+  
   purchaseLinks: [
     { name: "Amazon", url: "#", available: false },
     { name: "IBS", url: "#", available: false },
