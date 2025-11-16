@@ -51,9 +51,18 @@ export const ContactForm = () => {
           <div className="text-center mb-16">
             <h2 className="heading-1 mb-6 text-brand-primary">Contatti</h2>
             <div className="w-24 h-1 bg-brand-primary mx-auto mb-8"></div>
-            <p className="body-medium text-text-secondary">
+            <p className="body-medium text-text-secondary mb-6">
               Hai domande sul libro? Scrivici, saremo felici di risponderti
             </p>
+            <div className="flex items-center justify-center gap-2 text-brand-primary">
+              <Mail className="w-5 h-5" />
+              <a 
+                href="mailto:saverio.santoniccolo@gmail.com" 
+                className="body-medium font-semibold hover:underline"
+              >
+                saverio.santoniccolo@gmail.com
+              </a>
+            </div>
           </div>
 
           <form onSubmit={handleSubmit} className="contact-form bg-bg-card p-10 rounded-lg border border-border-medium">
