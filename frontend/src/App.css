@@ -207,7 +207,7 @@
   position: relative;
   max-width: 400px;
   width: 100%;
-  filter: drop-shadow(0 20px 40px rgba(217, 251, 6, 0.15));
+  filter: drop-shadow(0 20px 40px rgba(0, 212, 255, 0.2));
 }
 
 .book-cover-image {
