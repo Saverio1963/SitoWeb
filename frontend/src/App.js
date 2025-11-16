@@ -5,6 +5,7 @@ import { Hero } from "./components/Hero";
 import { AboutBook } from "./components/AboutBook";
 import { AboutAuthor } from "./components/AboutAuthor";
 import { Quote } from "./components/Quote";
+import { BookExcerpts } from "./components/BookExcerpts";
 import { Purchase } from "./components/Purchase";
 import { ContactForm } from "./components/ContactForm";
 import { Footer } from "./components/Footer";
@@ -19,6 +20,7 @@ function App() {
         <AboutBook />
         <AboutAuthor />
         <Quote />
+        <BookExcerpts />
         <Purchase />
         <ContactForm />
       </main>
