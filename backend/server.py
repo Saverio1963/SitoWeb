@@ -73,6 +73,11 @@ async def get_status_checks():
     
     return status_checks
 
+# Contact form endpoint
+@api_router.post("/contacts", response_model=ContactResponse)
+async def submit_contact(contact: ContactCreate):
+    return await create_contact(contact, db)
+
 # Include the router in the main app
 app.include_router(api_router)
 
