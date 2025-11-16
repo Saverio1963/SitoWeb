@@ -1,5 +1,6 @@
 import React from 'react';
 import { Book, Mail } from 'lucide-react';
+import { bookData } from '../data/mock';
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -20,10 +21,13 @@ export const Footer = () => {
             <p className="body-small text-text-secondary mb-2">
               Per informazioni:
             </p>
-            <div className="flex items-center gap-2 justify-center md:justify-end text-text-primary">
+            <div className="flex items-center gap-2 justify-center md:justify-end">
               <Mail className="w-4 h-4 text-brand-primary" />
-              <a href="#contatti" className="link-text hover:underline">
-                Contattaci
+              <a 
+                href={`mailto:${bookData.contact.email}`}
+                className="body-small text-brand-primary hover:underline"
+              >
+                {bookData.contact.email}
               </a>
             </div>
           </div>
