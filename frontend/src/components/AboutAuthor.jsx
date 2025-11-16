@@ -28,10 +28,23 @@ export const AboutAuthor = () => {
           </div>
 
           <div className="bg-bg-page/50 backdrop-blur-sm p-10 rounded-lg border border-border-medium mb-12">
-            <h3 className="heading-4 text-brand-primary mb-6 text-center">{bookData.author}</h3>
-            <p className="body-medium text-text-secondary leading-relaxed mb-8">
-              {bookData.authorBio}
-            </p>
+            <div className="flex flex-col md:flex-row gap-8 items-start mb-8">
+              {bookData.authorPhoto && (
+                <div className="flex-shrink-0 mx-auto md:mx-0">
+                  <img 
+                    src={bookData.authorPhoto} 
+                    alt={bookData.author}
+                    className="w-48 h-48 object-cover rounded-lg border-2 border-brand-primary shadow-lg"
+                  />
+                </div>
+              )}
+              <div className="flex-1">
+                <h3 className="heading-4 text-brand-primary mb-6">{bookData.author}</h3>
+                <p className="body-medium text-text-secondary leading-relaxed">
+                  {bookData.authorBio}
+                </p>
+              </div>
+            </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
               {achievements.map((item, index) => {
