@@ -107,15 +107,18 @@ user_problem_statement: "Sito web per la presentazione del libro 'Cronache dal f
 backend:
   - task: "Contact Form API"
     implemented: true
-    working: "NA"
+    working: true
     file: "backend/server.py, backend/models/contact.py, backend/routes/contacts.py"
     stuck_count: 0
     priority: "high"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
       - working: "NA"
         agent: "main"
         comment: "Implemented POST /api/contacts endpoint with MongoDB integration. Accepts name, email, message fields. Validates input and saves to contacts collection with contact_id, created_at, and status fields. Returns success/error response."
+      - working: true
+        agent: "testing"
+        comment: "COMPREHENSIVE TESTING COMPLETED - All 5 test scenarios passed: ✅ Valid contact submission (200 response with success=true, contact_id returned), ✅ Invalid email format validation (422 error), ✅ Missing required fields validation (name, email, message - all properly rejected with 422), ✅ Message length validation (empty and <10 chars rejected with 422), ✅ MongoDB data persistence verified (contacts saved with proper schema: contact_id, name, email, message, created_at, status). API endpoint https://novel-spotlight.preview.emergentagent.com/api/contacts working perfectly. Backend logs confirm successful contact creation and proper error handling."
 
 frontend:
   - task: "Contact Form Component"
