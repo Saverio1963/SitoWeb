@@ -17,14 +17,14 @@ export const Hero = () => {
             <h1 className="hero-title mb-6">
               {bookData.title}
             </h1>
-            <p className="body-large mb-6 text-brand-primary font-semibold">
-              Storie vere, emozioni autentiche. Un viaggio nell'invisibile.
-            </p>
             <p className="body-large mb-4 text-text-secondary">
               {bookData.subtitle}
             </p>
-            <p className="body-medium mb-8 text-text-secondary">
+            <p className="body-medium mb-6 text-text-secondary">
               di <span className="text-brand-primary font-semibold">{bookData.author}</span>
+            </p>
+            <p className="body-large mb-8 text-brand-primary font-semibold">
+              Storie vere, emozioni autentiche. Un viaggio nell'invisibile.
             </p>
             <p className="body-small mb-10 max-w-xl text-text-secondary leading-relaxed">
               Un viaggio autentico nelle indagini, nelle notti e nelle scelte di un uomo che ha servito lo Stato per 41 anni.
