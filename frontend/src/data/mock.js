@@ -14,6 +14,45 @@ export const bookData = {
   
   whyIWrote: "Ho deciso di scrivere perché certe storie non devono restare chiuse nei fascicoli, né nei corridoi delle caserme. Devono essere condivise, comprese, tramandate. Perché la lotta alla criminalità non è solo un fatto di polizia: è una battaglia culturale, una responsabilità collettiva, una questione di coscienza.\n\nHo raccontato episodi vissuti in prima persona: operazioni antimafia, indagini sul narcotraffico internazionale, omicidi efferati, collaborazioni difficili, delusioni istituzionali.\n\nHo raccontato anche il lato umano: la paura, la rabbia, la stanchezza, la solitudine. Perché dietro ogni uniforme c'è un cuore che batte, e dietro ogni operazione c'è una vita che cambia.\n\nNon cerco applausi. Cerco memoria. Cerco verità. Cerco giustizia, anche dopo la giustizia.\n\nSe queste storie serviranno a far riflettere, a far capire, a far scegliere — allora avranno avuto senso.",
   
+  gallery: [
+    {
+      id: 1,
+      image: "https://via.placeholder.com/600x400/1a3a4a/00d4ff?text=Foto+da+aggiungere",
+      caption: "Operazione di servizio - [Didascalia da aggiungere]",
+      category: "operazioni"
+    },
+    {
+      id: 2,
+      image: "https://via.placeholder.com/600x400/1a3a4a/00d4ff?text=Foto+da+aggiungere",
+      caption: "Presentazione del libro - [Didascalia da aggiungere]",
+      category: "eventi"
+    },
+    {
+      id: 3,
+      image: "https://via.placeholder.com/600x400/1a3a4a/00d4ff?text=Foto+da+aggiungere",
+      caption: "Immagine storica - [Didascalia da aggiungere]",
+      category: "storiche"
+    },
+    {
+      id: 4,
+      image: "https://via.placeholder.com/600x400/1a3a4a/00d4ff?text=Foto+da+aggiungere",
+      caption: "Operazione di servizio - [Didascalia da aggiungere]",
+      category: "operazioni"
+    },
+    {
+      id: 5,
+      image: "https://via.placeholder.com/600x400/1a3a4a/00d4ff?text=Foto+da+aggiungere",
+      caption: "Evento presentazione - [Didascalia da aggiungere]",
+      category: "eventi"
+    },
+    {
+      id: 6,
+      image: "https://via.placeholder.com/600x400/1a3a4a/00d4ff?text=Foto+da+aggiungere",
+      caption: "Immagine storica - [Didascalia da aggiungere]",
+      category: "storiche"
+    }
+  ],
+  
   excerpts: [
     {
       id: 1,
