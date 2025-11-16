@@ -9,7 +9,7 @@ export const bookData = {
   
   authorBio: "Saverio Santoniccicolo, Luogotenente in Carica Speciale dei Carabinieri, ora in congedo. Ha prestato servizio per quarantuno anni nella Benemerita, trenta dei quali nella città di Barletta, dove ha comandato la locale Sezione Operativa. Ha ricoperto altresì gli incarichi di: comandante di Stazione, addetto a Sezione di Polizia Giudiziaria, addetto a Nucleo Operativo e comandante di Nucleo Operativo.",
   
-  quote: "L'uniforme non è solo un simbolo, è una promessa fatta a chi non ha voce, a chi ha perso fiducia e chi aspetta che qualcuno dica: 'Io ci sono'",
+  quote: "L'uniforme non é solo un simbolo, é una promessa fatta a chi non ha voce, a chi ha perso la fiducia, a chi aspetta che qualcuno dica: \"io ci sono\"",
   quoteAuthor: "Saverio Santoniccicolo",
   
   purchaseLinks: [
