@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { Mail, User, MessageSquare, Send } from 'lucide-react';
+import { Mail, User, MessageSquare, Send, Facebook, Instagram, Linkedin } from 'lucide-react';
 import { toast } from 'sonner';
 import axios from 'axios';
+import { bookData } from '../data/mock';
 
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 const API = `${BACKEND_URL}/api`;
