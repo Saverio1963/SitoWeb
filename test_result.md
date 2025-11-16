@@ -101,3 +101,61 @@
 #====================================================================================================
 # Testing Data - Main Agent and testing sub agent both should log testing data below this section
 #====================================================================================================
+
+user_problem_statement: "Sito web per la presentazione del libro 'Cronache dal fronte invisibile' di Saverio Santoniccolo"
+
+backend:
+  - task: "Contact Form API"
+    implemented: true
+    working: "NA"
+    file: "backend/server.py, backend/models/contact.py, backend/routes/contacts.py"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+      - working: "NA"
+        agent: "main"
+        comment: "Implemented POST /api/contacts endpoint with MongoDB integration. Accepts name, email, message fields. Validates input and saves to contacts collection with contact_id, created_at, and status fields. Returns success/error response."
+
+frontend:
+  - task: "Contact Form Component"
+    implemented: true
+    working: "NA"
+    file: "frontend/src/components/ContactForm.jsx"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+      - working: "NA"
+        agent: "main"
+        comment: "Updated ContactForm to call real API endpoint POST /api/contacts. Replaced mock setTimeout with axios call. Added proper error handling and toast notifications using sonner. Form resets on success."
+
+  - task: "Book Landing Page"
+    implemented: true
+    working: true
+    file: "frontend/src/App.js, frontend/src/components/Hero.jsx, AboutBook.jsx, AboutAuthor.jsx, Quote.jsx, Purchase.jsx, Header.jsx, Footer.jsx"
+    stuck_count: 0
+    priority: "medium"
+    needs_retesting: false
+    status_history:
+      - working: true
+        agent: "main"
+        comment: "Complete book landing page with Hero section (book cover), synopsis, author bio, quote, purchase links (placeholders), and contact form. Design follows Pixel Pushers style guide with dark theme and lime green accents. All sections rendering correctly with smooth scroll navigation."
+
+metadata:
+  created_by: "main_agent"
+  version: "1.0"
+  test_sequence: 1
+  run_ui: false
+
+test_plan:
+  current_focus:
+    - "Contact Form API"
+    - "Contact Form Component"
+  stuck_tasks: []
+  test_all: false
+  test_priority: "high_first"
+
+agent_communication:
+  - agent: "main"
+    message: "Implemented complete backend API for contact form (POST /api/contacts) with MongoDB integration. Frontend ContactForm.jsx updated to call real API instead of mock. Ready for backend testing. Endpoints to test: POST /api/contacts with valid data, invalid email, missing fields, and empty message. Verify data saves to MongoDB 'contacts' collection with proper schema."
