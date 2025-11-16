@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 import { Mail, User, MessageSquare, Send } from 'lucide-react';
-import { useToast } from '../hooks/use-toast';
+import { toast } from 'sonner';
+import axios from 'axios';
+
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
+const API = `${BACKEND_URL}/api`;
 
 export const ContactForm = () => {
-  const { toast } = useToast();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -22,15 +25,23 @@ export const ContactForm = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Mock submission - will be replaced with actual API call
-    setTimeout(() => {
-      toast({
-        title: "Messaggio inviato!",
-        description: "Ti risponderemo al più presto.",
+    try {
+      const response = await axios.post(`${API}/contacts`, formData);
+      
+      if (response.data.success) {
+        toast.success("Messaggio inviato!", {
+          description: "Ti risponderemo al più presto.",
+        });
+        setFormData({ name: '', email: '', message: '' });
+      }
+    } catch (error) {
+      console.error('Error submitting contact form:', error);
+      toast.error("Errore", {
+        description: error.response?.data?.error || "Impossibile inviare il messaggio. Riprova più tardi.",
       });
-      setFormData({ name: '', email: '', message: '' });
+    } finally {
       setIsSubmitting(false);
-    }, 1000);
+    }
   };
 
   return (
