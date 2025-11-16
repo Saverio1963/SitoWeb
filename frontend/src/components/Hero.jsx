@@ -17,6 +17,9 @@ export const Hero = () => {
             <h1 className="hero-title mb-6">
               {bookData.title}
             </h1>
+            <p className="body-large mb-6 text-brand-primary font-semibold">
+              Storie vere, emozioni autentiche. Un viaggio nell'invisibile.
+            </p>
             <p className="body-large mb-4 text-text-secondary">
               {bookData.subtitle}
             </p>
