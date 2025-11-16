@@ -6,20 +6,20 @@
   --bg-card: #302f2c;
   --bg-light: #dfddd6;
   
-  --text-primary: #d9fb06;
+  --text-primary: #00d4ff;
   --text-secondary: #888680;
   --text-muted: #302f2c;
   --text-inverse: #1a1c1b;
   
-  --border-light: rgba(63, 72, 22, 0.5);
-  --border-medium: #3f4816;
+  --border-light: rgba(0, 212, 255, 0.3);
+  --border-medium: #1a3a4a;
   --border-strong: #888680;
   
-  --brand-primary: #d9fb06;
-  --brand-hover: rgba(217, 251, 6, 0.8);
-  --brand-active: rgba(217, 251, 6, 0.6);
+  --brand-primary: #00d4ff;
+  --brand-hover: rgba(0, 212, 255, 0.8);
+  --brand-active: rgba(0, 212, 255, 0.6);
   
-  --secondary-olive: #3f4816;
+  --secondary-olive: #1a3a4a;
   --secondary-yellow: #f8d47a;
   --secondary-blue: #0073e6;
 }
