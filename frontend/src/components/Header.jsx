@@ -18,12 +18,13 @@ export const Header = () => {
             <span className="text-brand-primary font-semibold text-lg">Cronache dal fronte invisibile</span>
           </div>
           
-          <div className="hidden md:flex items-center gap-6">
+          <div className="hidden md:flex items-center gap-5">
             <button onClick={() => scrollToSection('home')} className="nav-link">Home</button>
             <button onClick={() => scrollToSection('libro')} className="nav-link">Il Libro</button>
             <button onClick={() => scrollToSection('autore')} className="nav-link">L'Autore</button>
             <button onClick={() => scrollToSection('perche')} className="nav-link">Perché</button>
             <button onClick={() => scrollToSection('estratti')} className="nav-link">Estratti</button>
+            <button onClick={() => scrollToSection('galleria')} className="nav-link">Galleria</button>
             <button onClick={() => scrollToSection('acquista')} className="nav-link">Acquista</button>
             <button onClick={() => scrollToSection('contatti')} className="nav-link">Contatti</button>
           </div>
