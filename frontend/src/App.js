@@ -4,6 +4,7 @@ import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
 import { AboutBook } from "./components/AboutBook";
 import { AboutAuthor } from "./components/AboutAuthor";
+import { WhyIWrote } from "./components/WhyIWrote";
 import { Quote } from "./components/Quote";
 import { BookExcerpts } from "./components/BookExcerpts";
 import { Purchase } from "./components/Purchase";
@@ -19,6 +20,7 @@ function App() {
         <Hero />
         <AboutBook />
         <AboutAuthor />
+        <WhyIWrote />
         <Quote />
         <BookExcerpts />
         <Purchase />
