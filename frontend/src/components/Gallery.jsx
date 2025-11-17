@@ -63,8 +63,8 @@ export const Gallery = () => {
             </p>
           </div>
 
-          {/* Phase Tabs (for Commando) */}
-          {selectedCategory === 'commando' && (
+          {/* Phase Tabs (only show if multiple phases exist) */}
+          {Object.keys(phases).length > 1 && (
             <div className="flex flex-wrap justify-center gap-3 mb-12">
               {Object.keys(phases).map((phaseKey) => {
                 const phase = phases[phaseKey];
