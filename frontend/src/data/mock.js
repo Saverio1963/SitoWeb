@@ -79,6 +79,43 @@ export const bookData = {
         }
       }
     },
+    fabbrica: {
+      title: "La fabbrica della morte",
+      description: "Operazione contro il traffico di armi e stupefacenti",
+      phases: {
+        generale: {
+          title: "Sequestro",
+          description: "",
+          photos: [
+            {
+              id: 11,
+              image: "/fabbrica1.jpg",
+              caption: "Arsenale di armi da fuoco sequestrate"
+            },
+            {
+              id: 12,
+              image: "/fabbrica2.jpg",
+              caption: "Documentazione investigativa"
+            },
+            {
+              id: 13,
+              image: "/fabbrica3.jpg",
+              caption: "Materiale sequestrato durante l'operazione"
+            },
+            {
+              id: 14,
+              image: "/fabbrica4.jpg",
+              caption: "Vista completa del materiale sequestrato: armi, droga e strumenti"
+            },
+            {
+              id: 15,
+              image: "/fabbrica5.jpg",
+              caption: "Dettaglio del materiale illecito sequestrato"
+            }
+          ]
+        }
+      }
+    },
     altri: {
       title: "Altri Eventi",
       description: "Presentazioni del libro e momenti storici",
