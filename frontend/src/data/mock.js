@@ -27,7 +27,7 @@ export const bookData = {
     {
       id: 1,
       image: "https://via.placeholder.com/600x400/1a3a4a/00d4ff?text=Foto+da+aggiungere",
-      caption: "Operazione di servizio - [Didascalia da aggiungere]",
+      caption: "Commando",
       category: "operazioni"
     },
     {
