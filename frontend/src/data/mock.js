@@ -23,44 +23,80 @@ export const bookData = {
   
   whyIWrote: "Ho deciso di scrivere perché certe storie non devono restare chiuse nei fascicoli, né nei corridoi delle caserme. Devono essere condivise, comprese, tramandate. Perché la lotta alla criminalità non è solo un fatto di polizia: è una battaglia culturale, una responsabilità collettiva, una questione di coscienza.\n\nHo raccontato episodi vissuti in prima persona: operazioni antimafia, indagini sul narcotraffico internazionale, omicidi efferati, collaborazioni difficili, delusioni istituzionali.\n\nHo raccontato anche il lato umano: la paura, la rabbia, la stanchezza, la solitudine. Perché dietro ogni uniforme c'è un cuore che batte, e dietro ogni operazione c'è una vita che cambia.\n\nNon cerco applausi. Cerco memoria. Cerco verità. Cerco giustizia, anche dopo la giustizia.\n\nSe queste storie serviranno a far riflettere, a far capire, a far scegliere — allora avranno avuto senso.",
   
-  gallery: [
-    {
-      id: 1,
-      image: "/commando1.png",
-      caption: "Operazione Commando - Fase 1",
-      category: "operazioni"
+  galleryCategories: {
+    commando: {
+      title: "Operazione Commando",
+      description: "Documentazione fotografica delle fasi operative",
+      phases: {
+        fase1: {
+          title: "Fase 1",
+          description: "Ricognizione e sorveglianza aerea",
+          photos: [
+            {
+              id: 1,
+              image: "/commando1.png",
+              caption: "Vista aerea del territorio oggetto di indagine"
+            }
+          ]
+        },
+        fase2: {
+          title: "Fase 2",
+          description: "Osservazione del campo operativo",
+          photos: [
+            {
+              id: 2,
+              image: "/commando2.png",
+              caption: "Area operativa sotto controllo"
+            }
+          ]
+        },
+        fase3: {
+          title: "Fase 3",
+          description: "Controllo stradale e pedinamento",
+          photos: [
+            {
+              id: 3,
+              image: "/commando3.png",
+              caption: "Sorveglianza stradale e monitoraggio movimenti"
+            }
+          ]
+        },
+        fase4: {
+          title: "Fase 4",
+          description: "Esecuzione e sequestro",
+          photos: [
+            {
+              id: 4,
+              image: "/commando4.png",
+              caption: "Materiale sequestrato durante l'operazione"
+            },
+            {
+              id: 5,
+              image: "/commando5.png",
+              caption: "Veicolo utilizzato nell'operazione"
+            }
+          ]
+        }
+      }
     },
-    {
-      id: 2,
-      image: "/commando2.png",
-      caption: "Operazione Commando - Fase 2",
-      category: "operazioni"
-    },
-    {
-      id: 3,
-      image: "/commando3.png",
-      caption: "Operazione Commando - Fase 3",
-      category: "operazioni"
-    },
-    {
-      id: 4,
-      image: "/commando4.png",
-      caption: "Operazione Commando - Fase 4",
-      category: "operazioni"
-    },
-    {
-      id: 5,
-      image: "/commando5.png",
-      caption: "Operazione Commando - Veicolo operativo",
-      category: "operazioni"
-    },
-    {
-      id: 6,
-      image: "https://via.placeholder.com/600x400/1a3a4a/00d4ff?text=Foto+da+aggiungere",
-      caption: "Presentazione del libro - [Didascalia da aggiungere]",
-      category: "eventi"
+    altri: {
+      title: "Altri Eventi",
+      description: "Presentazioni del libro e momenti storici",
+      phases: {
+        generale: {
+          title: "Generale",
+          description: "",
+          photos: [
+            {
+              id: 6,
+              image: "https://via.placeholder.com/600x400/1a3a4a/00d4ff?text=Foto+da+aggiungere",
+              caption: "Presentazione del libro - [Didascalia da aggiungere]"
+            }
+          ]
+        }
+      }
     }
-  ],
+  },
   
   excerpts: [
     {
