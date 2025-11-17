@@ -26,39 +26,39 @@ export const bookData = {
   gallery: [
     {
       id: 1,
-      image: "https://via.placeholder.com/600x400/1a3a4a/00d4ff?text=Foto+da+aggiungere",
-      caption: "Commando",
+      image: "/commando1.png",
+      caption: "Operazione Commando - Fase 1",
       category: "operazioni"
     },
     {
       id: 2,
-      image: "https://via.placeholder.com/600x400/1a3a4a/00d4ff?text=Foto+da+aggiungere",
-      caption: "Presentazione del libro - [Didascalia da aggiungere]",
-      category: "eventi"
+      image: "/commando2.png",
+      caption: "Operazione Commando - Fase 2",
+      category: "operazioni"
     },
     {
       id: 3,
-      image: "https://via.placeholder.com/600x400/1a3a4a/00d4ff?text=Foto+da+aggiungere",
-      caption: "Immagine storica - [Didascalia da aggiungere]",
-      category: "storiche"
+      image: "/commando3.png",
+      caption: "Operazione Commando - Fase 3",
+      category: "operazioni"
     },
     {
       id: 4,
-      image: "https://via.placeholder.com/600x400/1a3a4a/00d4ff?text=Foto+da+aggiungere",
-      caption: "Operazione di servizio - [Didascalia da aggiungere]",
+      image: "/commando4.png",
+      caption: "Operazione Commando - Fase 4",
       category: "operazioni"
     },
     {
       id: 5,
-      image: "https://via.placeholder.com/600x400/1a3a4a/00d4ff?text=Foto+da+aggiungere",
-      caption: "Evento presentazione - [Didascalia da aggiungere]",
-      category: "eventi"
+      image: "/commando5.png",
+      caption: "Operazione Commando - Veicolo operativo",
+      category: "operazioni"
     },
     {
       id: 6,
       image: "https://via.placeholder.com/600x400/1a3a4a/00d4ff?text=Foto+da+aggiungere",
-      caption: "Immagine storica - [Didascalia da aggiungere]",
-      category: "storiche"
+      caption: "Presentazione del libro - [Didascalia da aggiungere]",
+      category: "eventi"
     }
   ],
   
