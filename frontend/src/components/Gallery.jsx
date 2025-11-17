@@ -4,6 +4,8 @@ import { Camera, X } from 'lucide-react';
 
 export const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null);
+  const [selectedCategory, setSelectedCategory] = useState('commando');
+  const [selectedPhase, setSelectedPhase] = useState('fase1');
 
   const openModal = (image) => {
     setSelectedImage(image);
@@ -12,6 +14,9 @@ export const Gallery = () => {
   const closeModal = () => {
     setSelectedImage(null);
   };
+
+  const currentCategory = bookData.galleryCategories[selectedCategory];
+  const phases = currentCategory?.phases || {};
 
   return (
     <section id="galleria" className="section-container bg-bg-page py-24">
@@ -28,17 +33,79 @@ export const Gallery = () => {
             </p>
           </div>
 
+          {/* Category Tabs */}
+          <div className="flex justify-center gap-4 mb-12">
+            {Object.keys(bookData.galleryCategories).map((catKey) => {
+              const cat = bookData.galleryCategories[catKey];
+              return (
+                <button
+                  key={catKey}
+                  onClick={() => {
+                    setSelectedCategory(catKey);
+                    setSelectedPhase(Object.keys(cat.phases)[0]);
+                  }}
+                  className={`px-6 py-3 rounded-full font-semibold transition-all duration-300 ${
+                    selectedCategory === catKey
+                      ? 'bg-brand-primary text-text-inverse'
+                      : 'bg-bg-card text-text-secondary border border-border-medium hover:border-brand-primary'
+                  }`}
+                >
+                  {cat.title}
+                </button>
+              );
+            })}
+          </div>
+
+          {/* Category Description */}
+          <div className="text-center mb-12">
+            <p className="body-medium text-text-primary mb-2">
+              {currentCategory?.description}
+            </p>
+          </div>
+
+          {/* Phase Tabs (for Commando) */}
+          {selectedCategory === 'commando' && (
+            <div className="flex flex-wrap justify-center gap-3 mb-12">
+              {Object.keys(phases).map((phaseKey) => {
+                const phase = phases[phaseKey];
+                return (
+                  <button
+                    key={phaseKey}
+                    onClick={() => setSelectedPhase(phaseKey)}
+                    className={`px-5 py-2 rounded-lg font-semibold text-sm transition-all duration-300 ${
+                      selectedPhase === phaseKey
+                        ? 'bg-secondary-olive text-brand-primary border-2 border-brand-primary'
+                        : 'bg-bg-card text-text-secondary border border-border-medium hover:border-brand-primary'
+                    }`}
+                  >
+                    {phase.title}
+                  </button>
+                );
+              })}
+            </div>
+          )}
+
+          {/* Phase Description */}
+          {phases[selectedPhase]?.description && (
+            <div className="text-center mb-8">
+              <p className="body-small text-text-secondary italic">
+                {phases[selectedPhase].description}
+              </p>
+            </div>
+          )}
+
+          {/* Photo Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {bookData.gallery.map((item) => (
+            {phases[selectedPhase]?.photos.map((photo) => (
               <div
-                key={item.id}
+                key={photo.id}
                 className="gallery-item group cursor-pointer"
-                onClick={() => openModal(item)}
+                onClick={() => openModal(photo)}
               >
                 <div className="relative overflow-hidden rounded-lg border border-border-medium hover:border-brand-primary transition-all duration-300">
                   <img
-                    src={item.image}
-                    alt={item.caption}
+                    src={photo.image}
+                    alt={photo.caption}
                     className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-bg-page/90 via-bg-page/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -50,7 +117,7 @@ export const Gallery = () => {
                   </div>
                 </div>
                 <p className="caption text-text-secondary mt-3 px-2">
-                  {item.caption}
+                  {photo.caption}
                 </p>
               </div>
             ))}
