@@ -35,7 +35,8 @@ export const bookData = {
             {
               id: 1,
               image: "/commando1.png",
-              caption: "Vista aerea del territorio oggetto di indagine"
+              caption: "Vista aerea del territorio oggetto di indagine",
+              type: "image"
             }
           ]
         },
@@ -46,7 +47,8 @@ export const bookData = {
             {
               id: 2,
               image: "/commando2.png",
-              caption: "Area operativa sotto controllo"
+              caption: "Area operativa sotto controllo",
+              type: "image"
             }
           ]
         },
@@ -57,7 +59,8 @@ export const bookData = {
             {
               id: 3,
               image: "/commando3.png",
-              caption: "Sorveglianza stradale e monitoraggio movimenti"
+              caption: "Sorveglianza stradale e monitoraggio movimenti",
+              type: "image"
             }
           ]
         },
@@ -68,12 +71,14 @@ export const bookData = {
             {
               id: 4,
               image: "/commando4.png",
-              caption: "Materiale sequestrato durante l'operazione"
+              caption: "Materiale sequestrato durante l'operazione",
+              type: "image"
             },
             {
               id: 5,
               image: "/commando5.png",
-              caption: "Veicolo utilizzato nell'operazione"
+              caption: "Veicolo utilizzato nell'operazione",
+              type: "image"
             }
           ]
         }
