@@ -125,9 +125,9 @@ export const bookData = {
             {
               id: 16,
               image: "/fabbrica_video1.3gp",
-              caption: "Video dell'operazione - Sequestro materiale",
+              caption: "Servizio TG1 liberazione ostaggio",
               type: "video",
-              thumbnail: "/fabbrica1.jpg"
+              thumbnail: "/video_thumbnail.jpg"
             }
           ]
         }
