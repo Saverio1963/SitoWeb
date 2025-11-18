@@ -90,27 +90,39 @@ export const bookData = {
             {
               id: 11,
               image: "/fabbrica1.jpg",
-              caption: "Arsenale di armi da fuoco sequestrate"
+              caption: "Arsenale di armi da fuoco sequestrate",
+              type: "image"
             },
             {
               id: 12,
               image: "/fabbrica2.jpg",
-              caption: "Documentazione investigativa"
+              caption: "Documentazione investigativa",
+              type: "image"
             },
             {
               id: 13,
               image: "/fabbrica3.jpg",
-              caption: "Materiale sequestrato durante l'operazione"
+              caption: "Materiale sequestrato durante l'operazione",
+              type: "image"
             },
             {
               id: 14,
               image: "/fabbrica4.jpg",
-              caption: "Vista completa del materiale sequestrato: armi, droga e strumenti"
+              caption: "Vista completa del materiale sequestrato: armi, droga e strumenti",
+              type: "image"
             },
             {
               id: 15,
               image: "/fabbrica5.jpg",
-              caption: "Dettaglio del materiale illecito sequestrato"
+              caption: "Dettaglio del materiale illecito sequestrato",
+              type: "image"
+            },
+            {
+              id: 16,
+              image: "/fabbrica_video1.3gp",
+              caption: "Video dell'operazione - Sequestro materiale",
+              type: "video",
+              thumbnail: "/fabbrica1.jpg"
             }
           ]
         }
