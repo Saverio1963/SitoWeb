@@ -97,3 +97,4 @@ android-sdk/ -e
 # Environment files
 *.env
 *.env.*
+frontend/public/fabbrica_video1.3gp
