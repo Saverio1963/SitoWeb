@@ -123,6 +123,24 @@ export const bookData = {
               type: "image"
             },
             {
+              id: 17,
+              image: "/fabbrica6.jpg",
+              caption: "Sacchetti di materiale sequestrato per aspirapolvere utilizzati per il trasporto",
+              type: "image"
+            },
+            {
+              id: 18,
+              image: "/fabbrica7.jpg",
+              caption: "Pacchi di droga nascosti all'interno del veicolo",
+              type: "image"
+            },
+            {
+              id: 19,
+              image: "/fabbrica8.jpg",
+              caption: "Esposizione completa dell'arsenale sequestrato: armi automatiche e esplosivi",
+              type: "image"
+            },
+            {
               id: 16,
               image: "/fabbrica_video1.3gp",
               caption: "Servizio TG1 liberazione ostaggio",
