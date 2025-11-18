@@ -98,3 +98,4 @@ android-sdk/ -e
 *.env
 *.env.*
 frontend/public/fabbrica_video1.3gp
+frontend/public/fabbrica_video2.avi
