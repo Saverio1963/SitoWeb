@@ -81,6 +81,33 @@ export const bookData = {
               type: "image"
             }
           ]
+        },
+        servizi: {
+          title: "Servizi giornalistici",
+          description: "Copertura mediatica dell'operazione Commando",
+          photos: [
+            {
+              id: 21,
+              image: "/commando_tg1.avi",
+              caption: "Servizio TG1 - Operazione Commando",
+              type: "video",
+              thumbnail: "/commando_tg1_thumb.jpg"
+            },
+            {
+              id: 22,
+              image: "/commando_tg3.mp4",
+              caption: "Servizio TG3 - Operazione Commando",
+              type: "video",
+              thumbnail: "/commando_tg3_thumb.jpg"
+            },
+            {
+              id: 23,
+              image: "/commando_teleregione.mp4",
+              caption: "Servizio Teleregione - Operazione Commando",
+              type: "video",
+              thumbnail: "/commando_teleregione_thumb.jpg"
+            }
+          ]
         }
       }
     },
