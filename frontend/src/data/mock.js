@@ -28,56 +28,38 @@ export const bookData = {
       title: "Operazione Commando",
       description: "Documentazione fotografica delle fasi operative",
       phases: {
-        fase1: {
-          title: "Fase 1",
-          description: "Ricognizione e sorveglianza aerea",
+        operative: {
+          title: "Fasi Operative",
+          description: "Documentazione completa delle operazioni sul campo",
           photos: [
             {
               id: 1,
               image: "/commando1.png",
-              caption: "Vista aerea del territorio oggetto di indagine",
+              caption: "Ricognizione aerea - Vista del territorio oggetto di indagine",
               type: "image"
-            }
-          ]
-        },
-        fase2: {
-          title: "Fase 2",
-          description: "Osservazione del campo operativo",
-          photos: [
+            },
             {
               id: 2,
               image: "/commando2.png",
-              caption: "Area operativa sotto controllo",
+              caption: "Osservazione campo operativo - Area sotto controllo",
               type: "image"
-            }
-          ]
-        },
-        fase3: {
-          title: "Fase 3",
-          description: "Controllo stradale e pedinamento",
-          photos: [
+            },
             {
               id: 3,
               image: "/commando3.png",
-              caption: "Sorveglianza stradale e monitoraggio movimenti",
+              caption: "Controllo stradale - Sorveglianza e monitoraggio movimenti",
               type: "image"
-            }
-          ]
-        },
-        fase4: {
-          title: "Fase 4",
-          description: "Esecuzione e sequestro",
-          photos: [
+            },
             {
               id: 4,
               image: "/commando4.png",
-              caption: "Materiale sequestrato durante l'operazione",
+              caption: "Esecuzione - Materiale sequestrato durante l'operazione",
               type: "image"
             },
             {
               id: 5,
               image: "/commando5.png",
-              caption: "Veicolo utilizzato nell'operazione",
+              caption: "Sequestro - Veicolo utilizzato nell'operazione",
               type: "image"
             }
           ]
