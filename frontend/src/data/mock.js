@@ -59,7 +59,7 @@ export const bookData = {
             {
               id: 5,
               image: "/commando5.png",
-              caption: "Sequestro - Veicolo utilizzato nell'operazione",
+              caption: "Autovetture rubate utilizzate per gli assalti ai portavalori",
               type: "image"
             }
           ]
