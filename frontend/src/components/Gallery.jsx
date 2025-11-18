@@ -142,24 +142,36 @@ export const Gallery = () => {
         </div>
       </div>
 
-      {/* Modal for enlarged image */}
+      {/* Modal for enlarged image/video */}
       {selectedImage && (
         <div
           className="fixed inset-0 z-50 bg-bg-page/95 backdrop-blur-sm flex items-center justify-center p-4"
           onClick={closeModal}
         >
           <button
-            className="absolute top-4 right-4 p-2 rounded-full bg-bg-card hover:bg-brand-primary transition-colors"
+            className="absolute top-4 right-4 p-2 rounded-full bg-bg-card hover:bg-brand-primary transition-colors z-10"
             onClick={closeModal}
           >
             <X className="w-6 h-6 text-text-primary" />
           </button>
           <div className="max-w-4xl w-full" onClick={(e) => e.stopPropagation()}>
-            <img
-              src={selectedImage.image}
-              alt={selectedImage.caption}
-              className="w-full h-auto rounded-lg border-2 border-brand-primary shadow-2xl"
-            />
+            {selectedImage.type === 'video' ? (
+              <video
+                controls
+                autoPlay
+                className="w-full h-auto rounded-lg border-2 border-brand-primary shadow-2xl"
+              >
+                <source src={selectedImage.image} type="video/3gpp" />
+                <source src={selectedImage.image} type="video/mp4" />
+                Il tuo browser non supporta la riproduzione video.
+              </video>
+            ) : (
+              <img
+                src={selectedImage.image}
+                alt={selectedImage.caption}
+                className="w-full h-auto rounded-lg border-2 border-brand-primary shadow-2xl"
+              />
+            )}
             <p className="body-medium text-text-primary mt-4 text-center px-4">
               {selectedImage.caption}
             </p>
