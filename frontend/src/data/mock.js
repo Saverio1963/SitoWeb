@@ -146,6 +146,13 @@ export const bookData = {
               caption: "Servizio TG1 liberazione ostaggio",
               type: "video",
               thumbnail: "/video_thumbnail.jpg"
+            },
+            {
+              id: 20,
+              image: "/fabbrica_video2.avi",
+              caption: "Video completo materiale sequestrato",
+              type: "video",
+              thumbnail: "/video2_thumbnail.jpg"
             }
           ]
         }
