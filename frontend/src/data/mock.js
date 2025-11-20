@@ -8,12 +8,20 @@ export const bookData = {
   synopsis: "Resilienza, dolore, speranza, quotidianità. È un viaggio autentico e crudo nelle indagini, nelle notti, nelle scelte e nelle ferite di un uomo che ha servito lo Stato per quarantuno anni. Saverio Santoniccolo, Luogotenente in Carica Speciale dell'Arma dei Carabinieri, ora in congedo, racconta con voce diretta e profonda le operazioni contro la mafia, il narcotraffico internazionale, gli assalti per rapine ai portavalori. Le stragi e gli omicidi che hanno segnato intere comunità, la cattura di latitanti e il dolore per la perdita di colleghi e innocenti. Queste pagine non sono solo cronaca: sono memoria viva, testimonianza morale, resistenza civile.",
   
   chapters: [
-    { number: "I", title: "L'Alba di un'Era" },
-    { number: "II", title: "Destini Intrecciati" },
-    { number: "III", title: "La Maschera e il Volto" },
-    { number: "IV", title: "Rivelazioni in Penombra" },
-    { number: "V", title: "Ombre in Agguato" },
-    { number: "VI", title: "Cuore e Conflitto" }
+    { number: "1", title: "Il giuramento e la prima uniforme" },
+    { number: "2", title: "L'arrivo a Bardulos" },
+    { number: "3", title: "Il litorale del terrore" },
+    { number: "4", title: "Marino Di Resta – Non invano" },
+    { number: "5", title: "Le ferie negate" },
+    { number: "6", title: "La fuga armata" },
+    { number: "7", title: "Graziella Mansi - Orrore di una notte d'estate" },
+    { number: "8", title: "Commando" },
+    { number: "9", title: "Predator – la scia del gasolio" },
+    { number: "10", title: "La fabbrica della morte" },
+    { number: "11", title: "Il \"cavallo\" sbagliato" },
+    { number: "12", title: "San Marco in Lamis – la strage annunciata –" },
+    { number: "13", title: "Una storia a lieto fine" },
+    { number: "14", title: "Un arresto particolare" }
   ],
   
   authorBio: "Saverio Santoniccolo, Luogotenente in Carica Speciale dei Carabinieri, ora in congedo. Ha prestato servizio per quarantuno anni nella Benemerita, trenta dei quali nella città di Barletta, dove ha comandato la locale Sezione Operativa. Ha ricoperto altresì gli incarichi di: comandante di Stazione, addetto a Sezione di Polizia Giudiziaria, addetto a Nucleo Operativo e comandante di Nucleo Operativo.",
