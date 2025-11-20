@@ -21,6 +21,7 @@ export const Header = () => {
           <div className="hidden md:flex items-center gap-5">
             <button onClick={() => scrollToSection('home')} className="nav-link">Home</button>
             <button onClick={() => scrollToSection('libro')} className="nav-link">Il Libro</button>
+            <button onClick={() => scrollToSection('capitoli')} className="nav-link">Capitoli</button>
             <button onClick={() => scrollToSection('autore')} className="nav-link">L'Autore</button>
             <button onClick={() => scrollToSection('perche')} className="nav-link">Perché</button>
             <button onClick={() => scrollToSection('estratti')} className="nav-link">Estratti</button>
