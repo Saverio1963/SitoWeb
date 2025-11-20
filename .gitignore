@@ -108,3 +108,7 @@ frontend/public/commando_tg1.avi
 # Environment files
 *.env
 *.env.*
+-e 
+# Environment files
+*.env
+*.env.*
