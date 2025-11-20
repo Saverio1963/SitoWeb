@@ -295,6 +295,33 @@
   text-align: center;
 }
 
+.chapter-number-text {
+  font-size: 5rem;
+  font-weight: 900;
+  color: #f4d03f;
+  line-height: 1;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.chapter-title-text {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #f4d03f;
+  line-height: 1.4;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .chapter-number-text {
+    font-size: 3.5rem;
+  }
+  
+  .chapter-title-text {
+    font-size: 1.2rem;
+  }
+}
+
 /* Gallery */
 .gallery-item {
   transition: transform 0.3s ease;
