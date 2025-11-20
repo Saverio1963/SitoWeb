@@ -23,15 +23,12 @@ export const Chapters = () => {
               >
                 <div className="flex items-center gap-6">
                   <div className="chapter-number">
-                    <span className="text-6xl font-black text-brand-primary opacity-80">
+                    <span className="chapter-number-text">
                       {chapter.number}
                     </span>
                   </div>
                   <div className="chapter-title flex-1">
-                    <h3 className="heading-4 text-text-primary">
-                      Capitolo {chapter.number}
-                    </h3>
-                    <p className="body-medium text-brand-primary mt-2 font-semibold">
+                    <p className="chapter-title-text">
                       {chapter.title}
                     </p>
                   </div>
