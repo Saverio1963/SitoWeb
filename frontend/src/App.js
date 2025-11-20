@@ -3,6 +3,7 @@ import "./App.css";
 import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
 import { AboutBook } from "./components/AboutBook";
+import { Chapters } from "./components/Chapters";
 import { AboutAuthor } from "./components/AboutAuthor";
 import { WhyIWrote } from "./components/WhyIWrote";
 import { Quote } from "./components/Quote";
@@ -20,6 +21,7 @@ function App() {
       <main>
         <Hero />
         <AboutBook />
+        <Chapters />
         <AboutAuthor />
         <WhyIWrote />
         <Quote />
