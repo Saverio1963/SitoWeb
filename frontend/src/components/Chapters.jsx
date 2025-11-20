@@ -4,7 +4,7 @@ import { BookMarked } from 'lucide-react';
 
 export const Chapters = () => {
   return (
-    <section className="section-container bg-bg-card py-24">
+    <section id="capitoli" className="section-container bg-bg-card py-24">
       <div className="container mx-auto px-8">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
