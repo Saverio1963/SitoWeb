@@ -53,7 +53,7 @@ export const ContactForm = () => {
             <h2 className="heading-1 mb-6 text-brand-primary">Contatti</h2>
             <div className="w-24 h-1 bg-brand-primary mx-auto mb-8"></div>
             <p className="body-medium text-text-secondary mb-6">
-              Hai domande sul libro? Scrivici, saremo felici di risponderti
+              Hai domande sul libro? Scrivimi, sarò felice di risponderti
             </p>
             
             <div className="flex flex-col items-center gap-4 mb-6">
